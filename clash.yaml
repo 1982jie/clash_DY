@@ -1,0 +1,593 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+proxies:
+- name: 🇭🇰 香港 01 · Reality
+  server: 95.40.100.129
+  port: 10126
+  type: vless
+  uuid: B1BF44DF-BADD-44EE-826A-12C27206993D
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+- name: 🇭🇰 香港 02 · Hysteria2
+  server: 202.146.222.89
+  port: 443
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇯🇵 日本 01 · Trojan
+  server: 151.101.193.242
+  port: 443
+  type: trojan
+  password: MITIVPN
+  sni: mitivpn.lifestyle
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn.lifestyle
+  udp: true
+- name: 🇯🇵 日本 02 · Trojan
+  server: bright-quagga.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 01 · Reality
+  server: sg3-r.link-t7.com
+  port: 10038
+  type: vless
+  uuid: F5363530-7194-486B-BF2C-9AF7E75F6543
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: d1.awsstatic.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  udp: true
+- name: 🇸🇬 新加坡 02 · Trojan
+  password: FH72359861
+  port: 443
+  server: charming-ox.rooster465.autos
+  skip-cert-verify: false
+  sni: charming-ox.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🇸🇬 新加坡 03 · Trojan
+  server: 54.254.235.88
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: charming-ox.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 01 · Trojan
+  server: loyal-molly.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 02 · Trojan
+  server: gentle-platypus.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: gentle-platypus.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 03 · Trojan
+  server: 43.202.61.210
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: loyal-molly.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 04 · Trojan
+  server: precise-locust.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: precise-locust.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 01 · Hysteria2
+  server: vpn-us-006.fastervpn.world
+  port: 443
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-006.fastervpn.world
+  skip-cert-verify: true
+- name: 🇺🇸 美国 02 · Trojan
+  server: cf.130209.xyz
+  port: 2053
+  type: trojan
+  password: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  sni: v4.ipsb.us.ci
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v2/check_update
+    headers:
+      Host: v4.ipsb.us.ci
+  udp: true
+- name: 🇺🇸 美国 03 · Hysteria2
+  server: 139.28.168.55
+  port: 8443
+  type: hysteria2
+  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
+  auth: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
+  sni: grape-honk.yyuyy.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 04 · Reality
+  server: 169.40.42.229
+  port: 443
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 05 · Reality
+  server: 45.151.30.127
+  port: 9873
+  type: vless
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  servername: dl.google.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
+  udp: true
+- name: 🇺🇸 美国 06 · Hysteria2
+  server: 38.99.248.120
+  port: 50160
+  type: hysteria2
+  password: 2c1611f83747dd3694e0e90cbf7d4e29
+  auth: 2c1611f83747dd3694e0e90cbf7d4e29
+  sni: 38-99-248-120.liao.kdns.fr
+  skip-cert-verify: true
+- name: 🇺🇸 美国 07 · Vless
+  server: a2.arshia-nova.ir
+  port: 443
+  type: vless
+  uuid: 79c9514e-aa3c-4cd0-bf0d-dd6df42039f6
+  tls: true
+  alpn:
+  - h2
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+  udp: true
+- name: 🇺🇸 美国 08 · Reality
+  server: 169.40.42.231
+  port: 443
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 01 · Hysteria2
+  server: 162.249.124.102
+  port: 8443
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: mercedes-grape.yyuyy.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 02 · Hysteria2
+  server: srvhy1.ezcon24.online
+  port: 8443
+  type: hysteria2
+  password: 553e3253-c454-431d-a7e6-42bc06ea5e14
+  auth: 553e3253-c454-431d-a7e6-42bc06ea5e14
+  sni: srvhy1.ezcon24.online
+  skip-cert-verify: true
+- name: 🇩🇪 德国 03 · Hysteria2
+  server: srvhy1.ezcon24.online
+  port: 8443
+  type: hysteria2
+  password: 130e6aab-9eba-441e-9021-22cbccc72832
+  auth: 130e6aab-9eba-441e-9021-22cbccc72832
+  sni: srvhy1.ezcon24.online
+  skip-cert-verify: true
+- name: 🇩🇪 德国 04 · Reality
+  server: 78.159.247.253
+  port: 2027
+  type: vless
+  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+    short-id: dc8109baf0f607ea
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 05 · Vless
+  server: 199.232.78.159
+  port: 443
+  type: vless
+  uuid: e0454af2-6fe9-4983-a55d-05e1da202602
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lsjaoijji.global.ssl.fastly.neT.
+  udp: true
+- name: 🇫🇷 法国 01 · Hysteria2
+  password: hysteria2_fastlane_h43dvv57b:BFhT1zI613GtDOzp0kdvMdgJRMroi7mZ
+  port: 1935
+  server: 2.27.28.106
+  skip-cert-verify: false
+  sni: de8.h.fastlanehosting.ru
+  type: hysteria2
+- name: 🇳🇱 荷兰 01 · Vless
+  server: skk.moe
+  port: 8880
+  type: vless
+  uuid: ba746959-18e7-471c-b00f-fa5cdd930abf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: crimson-bread-c38e.295.workers.dev
+  udp: true
+- name: 🇳🇱 荷兰 02 · Reality
+  server: 217.19.122.234
+  port: 9002
+  type: vless
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: api-maps.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-reality
+  udp: true
+- name: 🇩🇰 丹麦 01 · Hysteria2
+  server: dk86.mechvpn.online
+  port: 443
+  type: hysteria2
+  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  auth: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  sni: dk86.mechvpn.online
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇮🇪 爱尔兰 01 · Trojan
+  server: balanced-heron.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 02 · Trojan
+  server: 3.253.78.205
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: balanced-heron.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 01 · SS
+  server: 54.36.174.140
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
+- name: 🇧🇬 保加利亚 01 · Vless
+  server: 195.123.226.21
+  port: 443
+  type: vless
+  uuid: 33851d53-ede0-45f7-9eb8-9aa961f7d200
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vless
+  udp: true
+- name: 🇧🇬 保加利亚 02 · Reality
+  server: 195.123.226.114
+  port: 443
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  servername: eu-central.cendora.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇱🇻 拉脱维亚 01 · Hysteria2
+  server: 104.165.205.77
+  port: 8443
+  type: hysteria2
+  password: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
+  auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
+  sni: speedtestmark.com
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 01 · Hysteria2
+  server: 159.13.40.41
+  port: 20000
+  type: hysteria2
+  password: b42d90fa667942aebc734d60
+  auth: b42d90fa667942aebc734d60
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+- name: 🇷🇺 俄罗斯 01 · Reality
+  server: 201.51.1.84
+  port: 16923
+  type: vless
+  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
+  tls: true
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
+  servername: api-maps.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: neurex
+  udp: true
+proxy-groups:
+- name: 🚀 自动选择
+  type: url-test
+  proxies:
+  - 🇭🇰 香港 01 · Reality
+  - 🇭🇰 香港 02 · Hysteria2
+  - 🇯🇵 日本 01 · Trojan
+  - 🇯🇵 日本 02 · Trojan
+  - 🇸🇬 新加坡 01 · Reality
+  - 🇸🇬 新加坡 02 · Trojan
+  - 🇸🇬 新加坡 03 · Trojan
+  - 🇰🇷 韩国 01 · Trojan
+  - 🇰🇷 韩国 02 · Trojan
+  - 🇰🇷 韩国 03 · Trojan
+  - 🇰🇷 韩国 04 · Trojan
+  - 🇺🇸 美国 01 · Hysteria2
+  - 🇺🇸 美国 02 · Trojan
+  - 🇺🇸 美国 03 · Hysteria2
+  - 🇺🇸 美国 04 · Reality
+  - 🇺🇸 美国 05 · Reality
+  - 🇺🇸 美国 06 · Hysteria2
+  - 🇺🇸 美国 07 · Vless
+  - 🇺🇸 美国 08 · Reality
+  - 🇩🇪 德国 01 · Hysteria2
+  - 🇩🇪 德国 02 · Hysteria2
+  - 🇩🇪 德国 03 · Hysteria2
+  - 🇩🇪 德国 04 · Reality
+  - 🇩🇪 德国 05 · Vless
+  - 🇫🇷 法国 01 · Hysteria2
+  - 🇳🇱 荷兰 01 · Vless
+  - 🇳🇱 荷兰 02 · Reality
+  - 🇩🇰 丹麦 01 · Hysteria2
+  - 🇮🇪 爱尔兰 01 · Trojan
+  - 🇮🇪 爱尔兰 02 · Trojan
+  - 🇵🇱 波兰 01 · SS
+  - 🇧🇬 保加利亚 01 · Vless
+  - 🇧🇬 保加利亚 02 · Reality
+  - 🇱🇻 拉脱维亚 01 · Hysteria2
+  - 🇦🇺 澳大利亚 01 · Hysteria2
+  - 🇷🇺 俄罗斯 01 · Reality
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🇭🇰 香港/台湾
+  type: url-test
+  proxies:
+  - 🇭🇰 香港 01 · Reality
+  - 🇭🇰 香港 02 · Hysteria2
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🇯🇵 日本
+  type: url-test
+  proxies:
+  - 🇯🇵 日本 01 · Trojan
+  - 🇯🇵 日本 02 · Trojan
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🇸🇬 新加坡
+  type: url-test
+  proxies:
+  - 🇸🇬 新加坡 01 · Reality
+  - 🇸🇬 新加坡 02 · Trojan
+  - 🇸🇬 新加坡 03 · Trojan
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🇰🇷 韩国
+  type: url-test
+  proxies:
+  - 🇰🇷 韩国 01 · Trojan
+  - 🇰🇷 韩国 02 · Trojan
+  - 🇰🇷 韩国 03 · Trojan
+  - 🇰🇷 韩国 04 · Trojan
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🇺🇸 美国
+  type: url-test
+  proxies:
+  - 🇺🇸 美国 01 · Hysteria2
+  - 🇺🇸 美国 02 · Trojan
+  - 🇺🇸 美国 03 · Hysteria2
+  - 🇺🇸 美国 04 · Reality
+  - 🇺🇸 美国 05 · Reality
+  - 🇺🇸 美国 06 · Hysteria2
+  - 🇺🇸 美国 07 · Vless
+  - 🇺🇸 美国 08 · Reality
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🌍 欧洲及其他
+  type: url-test
+  proxies:
+  - 🇩🇪 德国 01 · Hysteria2
+  - 🇩🇪 德国 02 · Hysteria2
+  - 🇩🇪 德国 03 · Hysteria2
+  - 🇩🇪 德国 04 · Reality
+  - 🇩🇪 德国 05 · Vless
+  - 🇫🇷 法国 01 · Hysteria2
+  - 🇳🇱 荷兰 01 · Vless
+  - 🇳🇱 荷兰 02 · Reality
+  - 🇩🇰 丹麦 01 · Hysteria2
+  - 🇮🇪 爱尔兰 01 · Trojan
+  - 🇮🇪 爱尔兰 02 · Trojan
+  - 🇵🇱 波兰 01 · SS
+  - 🇧🇬 保加利亚 01 · Vless
+  - 🇧🇬 保加利亚 02 · Reality
+  - 🇱🇻 拉脱维亚 01 · Hysteria2
+  - 🇦🇺 澳大利亚 01 · Hysteria2
+  - 🇷🇺 俄罗斯 01 · Reality
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🤖 AI 工具
+  type: url-test
+  proxies:
+  - 🇭🇰 香港 01 · Reality
+  - 🇭🇰 香港 02 · Hysteria2
+  - 🇯🇵 日本 01 · Trojan
+  - 🇯🇵 日本 02 · Trojan
+  - 🇸🇬 新加坡 01 · Reality
+  - 🇸🇬 新加坡 02 · Trojan
+  - 🇸🇬 新加坡 03 · Trojan
+  - 🇺🇸 美国 01 · Hysteria2
+  - 🇺🇸 美国 02 · Trojan
+  - 🇺🇸 美国 03 · Hysteria2
+  - 🇺🇸 美国 04 · Reality
+  - 🇺🇸 美国 05 · Reality
+  - 🇺🇸 美国 06 · Hysteria2
+  - 🇺🇸 美国 07 · Vless
+  - 🇺🇸 美国 08 · Reality
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🖐 手动选择
+  type: select
+  proxies:
+  - 🚀 自动选择
+  - 🇭🇰 香港/台湾
+  - 🇯🇵 日本
+  - 🇸🇬 新加坡
+  - 🇰🇷 韩国
+  - 🇺🇸 美国
+  - 🌍 欧洲及其他
+  - 🤖 AI 工具
+  - 🇭🇰 香港 01 · Reality
+  - 🇭🇰 香港 02 · Hysteria2
+  - 🇯🇵 日本 01 · Trojan
+  - 🇯🇵 日本 02 · Trojan
+  - 🇸🇬 新加坡 01 · Reality
+  - 🇸🇬 新加坡 02 · Trojan
+  - 🇸🇬 新加坡 03 · Trojan
+  - 🇰🇷 韩国 01 · Trojan
+  - 🇰🇷 韩国 02 · Trojan
+  - 🇰🇷 韩国 03 · Trojan
+  - 🇰🇷 韩国 04 · Trojan
+  - 🇺🇸 美国 01 · Hysteria2
+  - 🇺🇸 美国 02 · Trojan
+  - 🇺🇸 美国 03 · Hysteria2
+  - 🇺🇸 美国 04 · Reality
+  - 🇺🇸 美国 05 · Reality
+  - 🇺🇸 美国 06 · Hysteria2
+  - 🇺🇸 美国 07 · Vless
+  - 🇺🇸 美国 08 · Reality
+  - 🇩🇪 德国 01 · Hysteria2
+  - 🇩🇪 德国 02 · Hysteria2
+  - 🇩🇪 德国 03 · Hysteria2
+  - 🇩🇪 德国 04 · Reality
+  - 🇩🇪 德国 05 · Vless
+  - 🇫🇷 法国 01 · Hysteria2
+  - 🇳🇱 荷兰 01 · Vless
+  - 🇳🇱 荷兰 02 · Reality
+  - 🇩🇰 丹麦 01 · Hysteria2
+  - 🇮🇪 爱尔兰 01 · Trojan
+  - 🇮🇪 爱尔兰 02 · Trojan
+  - 🇵🇱 波兰 01 · SS
+  - 🇧🇬 保加利亚 01 · Vless
+  - 🇧🇬 保加利亚 02 · Reality
+  - 🇱🇻 拉脱维亚 01 · Hysteria2
+  - 🇦🇺 澳大利亚 01 · Hysteria2
+  - 🇷🇺 俄罗斯 01 · Reality
+rules:
+- DOMAIN-SUFFIX,openai.com,🤖 AI 工具
+- DOMAIN-SUFFIX,chatgpt.com,🤖 AI 工具
+- DOMAIN-SUFFIX,oaistatic.com,🤖 AI 工具
+- DOMAIN-SUFFIX,oaiusercontent.com,🤖 AI 工具
+- DOMAIN-SUFFIX,claude.ai,🤖 AI 工具
+- DOMAIN-SUFFIX,anthropic.com,🤖 AI 工具
+- DOMAIN-SUFFIX,gemini.google.com,🤖 AI 工具
+- DOMAIN-SUFFIX,google.com,🚀 自动选择
+- DOMAIN-SUFFIX,googlevideo.com,🚀 自动选择
+- DOMAIN-SUFFIX,gstatic.com,🚀 自动选择
+- DOMAIN-SUFFIX,youtube.com,🚀 自动选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 自动选择
+- DOMAIN-SUFFIX,ggpht.com,🚀 自动选择
+- DOMAIN-SUFFIX,github.com,🚀 自动选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 自动选择
+- DOMAIN-SUFFIX,twitter.com,🚀 自动选择
+- DOMAIN-SUFFIX,x.com,🚀 自动选择
+- DOMAIN-SUFFIX,facebook.com,🚀 自动选择
+- DOMAIN-SUFFIX,instagram.com,🚀 自动选择
+- DOMAIN-SUFFIX,telegram.org,🚀 自动选择
+- DOMAIN-SUFFIX,t.me,🚀 自动选择
+- DOMAIN-SUFFIX,netflix.com,🚀 自动选择
+- DOMAIN-SUFFIX,disneyplus.com,🚀 自动选择
+- GEOIP,CN,DIRECT
+- MATCH,🚀 自动选择
